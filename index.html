@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>TITLE</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        text-align: center;
+      }
+      body {
+        margin-top: 180px;
+      }
+      a {
+        color: dimgrey;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 100px;
+        margin-bottom: -5px;
+        color: rgb(60, 134, 196);
+        font-family: fantasy;
+      }
+      input {
+        border: 2px solid rgb(60, 134, 196);    
+      }
+      #submit {
+        background-color: rgb(60, 134, 196);
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
-    <br /><br /><br /><br /><br /><br /><br />
-
-    <div style="text-align: center">
-      <span style="font-size: 60px">HOME</span>
-
+    <div>
+      <h1>HOME</h1>
       <nav>
-        <strong>MENU</strong>
+        <strong style="text-decoration: underline">HOME</strong>
         <a href="./menu1.html">TEXT 1</a>
         <a href="./menu2.html">TEXT 2</a>
         <a href="./menu3.html">TEXT 3</a>
       </nav>
     </div>
-
-    <br /><br />
-
-    <form style="text-align: center">
-      <p><label for="id_txt">ID</label> : <input id="id_txt" type="text" name="id" /></p>
-      <p><label for="password">PASSWORD</label> : <input id="password" type="password" name="pwd" /></p>
-      <p><input type="submit" /></p>
-    </form>
+    <br />
+      <form>
+        <input id="id_txt" type="text" name="id" placeholder="ID" maxlength="41">
+        <br>
+        <input id="pwd" type="password" name="pwd" placeholder="PASSWORD" maxlength="41">
+        <br>
+        <button id="submit" type="submit" name="submit"><span>log-in</span></button> 
+      </form>
   </body>
 </html>
