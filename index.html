@@ -8,11 +8,15 @@
         text-align: center;
       }
       body {
-        margin-top: 180px;
+        margin: 0;
+        padding: 80px;
       }
       a {
         color: dimgrey;
         text-decoration: none;
+      }
+      nav {
+        margin-bottom: 45px;
       }
       h1 {
         font-size: 100px;
@@ -21,8 +25,11 @@
         font-family: fantasy;
       }
       input {
+        height: 30px;
         border: none;
         border-bottom: 2px solid rgb(60, 134, 196);
+        border-radius: 0px;
+        color: dimgrey;
         font-size: 17px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
@@ -30,23 +37,26 @@
       }
       input:focus {
         outline: none;
+        background-color: rgb(205, 239, 255);
       }
-      #submit {
-        background-color: rgb(60, 134, 196);
-        color: white;
-        border: none;
+      button {
+        background-color: white;
+        color: rgb(60, 134, 196);
+        border: 2px solid rgb(60, 134, 196);
         border-radius: 12px;
-        width: 104px;
-        height: 24px;
-        margin-top: 25px;
+        width: 100px;
+        height: 23px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
+        padding-top: 0px;
       }
-      form {
-        margin-top: 60px;
+      button:hover {
+        background-color: rgb(60, 134, 196);
+        color: white;
       }
       #pwd {
         margin-top: 10px;
+        margin-bottom: 25px;
       }
     </style>
   </head>
@@ -79,6 +89,9 @@
         maxlength="41"
       />
       <br />
+      <button id="signup" type="button" name="signup" onclick="location.href='./sign-up.html'">
+        <span>sign-up</span>
+      </button>
       <button id="submit" type="submit" name="submit">
         <span>log-in</span>
       </button>
