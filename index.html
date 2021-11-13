@@ -21,11 +21,32 @@
         font-family: fantasy;
       }
       input {
-        border: 2px solid rgb(60, 134, 196);    
+        border: none;
+        border-bottom: 2px solid rgb(60, 134, 196);
+        font-size: 17px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: left;
+      }
+      input:focus {
+        outline: none;
       }
       #submit {
         background-color: rgb(60, 134, 196);
         color: white;
+        border: none;
+        border-radius: 12px;
+        width: 104px;
+        height: 24px;
+        margin-top: 25px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      form {
+        margin-top: 60px;
+      }
+      #pwd {
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -40,13 +61,27 @@
         <a href="./menu3.html">TEXT 3</a>
       </nav>
     </div>
-    <br />
-      <form>
-        <input id="id_txt" type="text" name="id" placeholder="ID" maxlength="41">
-        <br>
-        <input id="pwd" type="password" name="pwd" placeholder="PASSWORD" maxlength="41">
-        <br>
-        <button id="submit" type="submit" name="submit"><span>log-in</span></button> 
-      </form>
+
+    <form>
+      <input
+        id="id_txt"
+        type="text"
+        name="id"
+        placeholder="ID"
+        maxlength="41"
+      />
+      <br />
+      <input
+        id="pwd"
+        type="password"
+        name="pwd"
+        placeholder="PASSWORD"
+        maxlength="41"
+      />
+      <br />
+      <button id="submit" type="submit" name="submit">
+        <span>log-in</span>
+      </button>
+    </form>
   </body>
 </html>
