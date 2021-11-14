@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta charset="utf-8" />
+
+    <style>
+      body {
+            margin:0;
+            padding:60px;
+        }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 15px;
+        color: rgb(60, 134, 196);
+        font-family: fantasy;
+      }
+      a {
+          display: block;
+          text-align: left;
+          padding-left: 400px;
+          text-decoration: none;
+          color: dimgrey;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        form {
+            font-family: sans-serif;
+            text-align: center;
+            margin:0 auto;
+            padding:20px;
+            display:block;
+            border:7px solid rgb(60, 134, 196);
+            width: 400px;
+            color: dimgrey;
+        }
+        input, select {
+            font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border:none;
+            background-color: none;
+            border-bottom: 2px solid rgb(60, 134, 196);
+            border-radius: 0;
+            color: dimgrey;
+        }
+        input:focus {
+            outline: none;
+            background-color: white;
+        }
+        button {
+            border:none;
+            background-color: rgb(60, 134, 196);
+            color: white;
+            height: 25px;
+        }
+        button:focus {
+         outline-color: dimgrey;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Sign-up</h1>
+    <a href="./index.html"><span>◀back</span></a>
+
+    <form>
+        <p><input id="id_txt" name="id" type="text" placeholder="ID" maxlength="41">
+        <button>check</button></p>
+
+        <p><input id="pwd" name="pwd" type="password" placeholder="PASSWORD" max="41"></p>
+
+        <p><input id="pwd_c" name="pwd_c" type="password" placeholder="password check" maxlength="41">
+        <button>check</button></p>
+
+        <p><input id="name" name="name" type="text" placeholder="NAME"></p>
+
+        <p>Date of birth:
+            <input id="year" name="year" type="number" placeholder="YEAR" max="2021" min="1921" maxlength="4">
+            <select>
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+             <option>6</option>
+             <option>7</option>
+             <option>8</option>
+             <option>9</option>
+             <option>10</option>
+             <option>11</option>
+             <option>12</option>
+            </select>
+            <input id="day" name="day" type="number" placeholder="DAY" max="31" min=1></p>
+
+        <p><input id="female" name="sex" type="radio"><label for="female">Female</label></input>
+            <input id="male" name="sex" type="radio"><label for="male">Male</label></input>
+            <input id="non" name="sex" type="radio"><label for="non">Non-binary</label></input>
+        <p><button id="submit" name="submit" type="submit">Sign-up</button></p>
+    </form>
+  </body>
+</html>
