@@ -3,6 +3,7 @@
   <head>
     <title>title</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css">
 
     <style>
       body {
@@ -10,32 +11,27 @@
             padding:60px;
         }
       h1 {
-        text-align: center;
         font-size: 60px;
         margin-bottom: 15px;
-        color: rgb(60, 134, 196);
-        font-family: fantasy;
       }
       a {
           display: block;
           text-align: left;
-          padding-left: 400px;
-          text-decoration: none;
-          color: dimgrey;
+          padding-left: 415px;
           margin-bottom: 5px;
           font-weight: bold;
         }
-        form {
+      form {
             font-family: sans-serif;
             text-align: center;
             margin:0 auto;
             padding:20px;
             display:block;
-            border:7px solid rgb(60, 134, 196);
-            width: 400px;
+            border:5px solid rgb(60, 134, 196);
+            width: 350px;
             color: dimgrey;
         }
-        input, select {
+      input, select {
             font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             border:none;
             background-color: none;
@@ -43,19 +39,40 @@
             border-radius: 0;
             color: dimgrey;
         }
-        input:focus {
+      input:focus {
             outline: none;
             background-color: white;
         }
-        button {
+      button {
             border:none;
             background-color: rgb(60, 134, 196);
             color: white;
             height: 25px;
         }
-        button:focus {
+      button:focus {
          outline-color: dimgrey;
         }
+      p {
+          text-align: left;
+          padding-left: 25px;
+        }
+      div {
+          text-align:center;
+          padding:40px;
+          margin-left:300px;
+        }
+      #submit {
+          background-color: white;
+         color: rgb(60, 134, 196);
+         border: 2px solid rgb(60, 134, 196);
+          border-radius: 12px;
+          width: 80px;
+          height: 23px;
+        }
+      #submit:hover {
+        background-color: rgb(60, 134, 196);
+        color: white;
+      }
     </style>
   </head>
 
@@ -64,18 +81,18 @@
     <a href="./index.html"><span>◀back</span></a>
 
     <form>
-        <p><input id="id_txt" name="id" type="text" placeholder="ID" maxlength="41">
+        <p><input id="id_txt" name="id" type="text" placeholder="ID">
         <button>check</button></p>
 
         <p><input id="pwd" name="pwd" type="password" placeholder="PASSWORD" max="41"></p>
 
-        <p><input id="pwd_c" name="pwd_c" type="password" placeholder="password check" maxlength="41">
+        <p><input id="pwd_c" name="pwd_c" type="password" placeholder="password check">
         <button>check</button></p>
 
         <p><input id="name" name="name" type="text" placeholder="NAME"></p>
 
         <p>Date of birth:
-            <input id="year" name="year" type="number" placeholder="YEAR" max="2021" min="1921" maxlength="4">
+            <input id="year" name="year" type="number" placeholder="YEAR" max="2021" min="1921">
             <select>
              <option>1</option>
              <option>2</option>
@@ -95,7 +112,9 @@
         <p><input id="female" name="sex" type="radio"><label for="female">Female</label></input>
             <input id="male" name="sex" type="radio"><label for="male">Male</label></input>
             <input id="non" name="sex" type="radio"><label for="non">Non-binary</label></input>
-        <p><button id="submit" name="submit" type="submit">Sign-up</button></p>
-    </form>
+            </p>
+          </form>
+
+        <div><button id="submit" name="submit" type="submit">Sign-up</button></div>
   </body>
 </html>
